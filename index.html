@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hitung with JS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container mt-5 mb-5 p-3 card text-center" style="width: 50rem;">
+        <h5>MEENGHITUNG NILAI RATA-RATA,MEDIAN, ANGKA TERENDAH DAN TERTINGGI</h5>
+        <form id="myForm">
+            <p>Nilai 1: <input type="number" id="input1"></p>
+            <p>Nilai 2: <input type="number" id="input2"></p>
+            <p>Nilai 3: <input type="number" id="input3"></p>
+            <p>Nilai 4: <input type="number" id="input4"></p>
+            <p>Nilai 5: <input type="number" id="input5"></p>
+
+            <button type="button" class="btn btn-primary" onclick="hitung()">Hitung</button>
+            <button type="button" class="btn btn-danger" onclick="resetButton()">Reset</button>
+
+        </form>
+        <div id="display">
+            <table>
+                <tr>
+                    <td class="text-left">
+                        Nilai Average (Rata-rata)
+                    </td>
+                    <td>
+                        :
+                    </td>
+                    <td>
+                        <span id="hasil1"></span>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td class="text-left">
+                        Nilai Median (Nilai Tengah)
+                    </td>
+                    <td>
+                        :
+                    </td>
+                    <td>
+                        <span id="hasil2"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-left">
+                        Nilai Min (Terkecil)
+                    </td>
+                    <td>
+                        :
+                    </td>
+                    <td>
+                        <span id="hasil3"></span>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td class="text-left">
+                        Nilai Max (Tertinggi)
+                    </td>
+                    <td>
+                        :
+                    </td>
+                    <td>
+                        <span id="hasil4"></span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+
+    </div>
+    <footer class="text-center">
+        Made by : Nur Hikmah (D121181015)
+    </footer>
+</body>
+<script src="script.js"></script>
+
+</html>
